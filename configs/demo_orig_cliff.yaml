@@ -1,0 +1,46 @@
+DATASET:
+  BATCH_SIZE: 64
+  CROP_FACTOR: 0.5
+  CROP_PROB: 0.2
+  DATASETS_AND_RATIOS: coco_mpii_h36m_mpi-inf-3dhp_0.2_0.2_0.4_0.2
+  IMG_RES: 224
+  MESH_COLOR: pinkish
+  NOISE_FACTOR: 0.4
+  NUM_WORKERS: 16
+  PIN_MEMORY: true
+  SCALE_FACTOR: 0.25
+  SHUFFLE_TRAIN: true
+  VAL_DS: 3dpw-test-cam_rich_h36m-p1
+  CROP_PERCENT: 1.0
+  ALB: true
+EXP_NAME: new_data_backbone
+LOG_DIR: logs
+OPTIMIZER:
+  LR: 5.0e-05
+  TYPE: adam
+  WD: 0.0
+MODEL:
+  BACKBONE: hrnet_w48-conv
+  BETA_LOSS_WEIGHT: 0.001
+  JOINT_LOSS_WEIGHT: 5.0
+  KEYPOINT_LOSS_WEIGHT: 5.0
+  LOSS_WEIGHT: 60.0
+  POSE_LOSS_WEIGHT: 1.0
+  SHAPE_LOSS_WEIGHT: 1.0
+TESTING:
+  FP_VIS: false
+  MESH_VIS: false
+TRAINING:
+  CHECK_VAL_EVERY_N_EPOCH: 1
+  MAX_EPOCHS: 200000
+  PRETRAINED_CKPT: scratch
+  PRETRAINED_LIT: null
+  RELOAD_DATALOADERS_EVERY_EPOCH: false
+  RESUME: null
+  TEST_BEFORE_TRAINING: false
+  GT_VIS: false
+TRIAL:
+  bedlam_bbox: true
+  version: real
+  criterion: mse
+

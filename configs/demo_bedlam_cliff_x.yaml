@@ -1,0 +1,45 @@
+DATASET:
+  BATCH_SIZE: 64
+  CROP_FACTOR: 0.5
+  CROP_PROB: 0.0
+  DATASETS_AND_RATIOS: 'static-hdri_agora-bfh_zoom-suburbd_closeup-suburba_closeup-suburbb_closeup-suburbc_closeup-suburbd_closeup-gym_zoom-gym_static-gym_static-office_orbit-office_static-hdri-zoomed_pitchup-stadium_pitchdown-stadium_static-hdri-bmi_closeup-suburbb-bmi_closeup-suburbc-bmi_static-suburbd-bmi_zoom-gym-bmi_static-office-hair_zoom-suburbd-hair_static-gym-hair_orbit-archviz-15_orbit-archviz-19_orbit-archviz-12_orbit-archviz-10'
+  IMG_RES: 224
+  MESH_COLOR: pinkish
+  NOISE_FACTOR: 0.4
+  NUM_WORKERS: 32
+  PIN_MEMORY: true
+  SCALE_FACTOR: 0.0
+  SHUFFLE_TRAIN: true
+  VAL_DS: orbit-stadium-bmi
+  CROP_PERCENT: 0.8
+  ALB: false
+EXP_NAME: bedlam_cam_ready
+LOG_DIR: logs
+OPTIMIZER:
+  LR: 5.0e-05
+  TYPE: adam
+  WD: 0.0
+MODEL:
+  BACKBONE: hrnet_w48-conv
+  BETA_LOSS_WEIGHT: 0.001
+  JOINT_LOSS_WEIGHT: 5.0
+  KEYPOINT_LOSS_WEIGHT: 5.0
+  LOSS_WEIGHT: 60.0
+  POSE_LOSS_WEIGHT: 1.0
+  SHAPE_LOSS_WEIGHT: 1.0
+TESTING:
+  FP_VIS: false
+  MESH_VIS: false
+TRAINING:
+  CHECK_VAL_EVERY_N_EPOCH: 1
+  MAX_EPOCHS: 200000
+  PRETRAINED_CKPT: scratch
+  PRETRAINED_LIT: null
+  RELOAD_DATALOADERS_EVERY_EPOCH: false
+  RESUME: null
+  TEST_BEFORE_TRAINING: false
+  WP_VIS: false
+TRIAL:
+  bedlam_bbox: true
+  criterion: mse
+  version: smplx
