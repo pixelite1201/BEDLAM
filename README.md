@@ -57,11 +57,11 @@ python demox.py --cfg configs/demo_bedlam_cliff_x.yaml --display
 
 
 ## Evaluation
-For instructions on how to run evaluation on different benchmarks please refer to [evaluation.md](docs/Evaluation.md)
+For instructions on how to run evaluation on different benchmarks please refer to [evaluation.md](docs/evaluation.md)
 
 
 ## Training
-For instructions on how to run training please refer to [training.md](docs/Training.md)
+For instructions on how to run training please refer to [training.md](docs/training.md)
 
 
 <!-- ### CLIFF training -->
