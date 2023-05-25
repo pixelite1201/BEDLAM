@@ -31,6 +31,9 @@ If you want to finetune the model with 3DPW training data, you can run the follo
 python train.py --cfg configs/bedlam_cliff_3dpw_ft.yaml --resume --ckpt data/ckpt/bedlam_cliff.ckpt 
 
 ```
+Note that you need to download 3DPW training images from [3DPW](https://virtualhumans.mpi-inf.mpg.de/3DPW/) and place them in `data/real_training_images/3DPW/imageFiles`. You can also provide your own image path in train/core/config.py `'3dpw-train-smplx': 'data/real_training_images/3DPW'`.
+
+
 ## Training Hand Model
 
 ### Prepare data
@@ -60,4 +63,41 @@ For training BEDLAM-CLIFF-X, you can either use the pretrained checkpoint for bo
 
 ```
 python trainx.py --cfg configs/bedlam_cliff_x.yaml --hand_ckpt data/ckpt/hands_with_agora.ckpt --body_ckpt data/ckpt/bedlam_cliff.ckpt
+```
+
+## Training CLIFF model with real images
+
+### Prepare data
+Register on [BEDLAM](https://bedlam.is.tue.mpg.de/) website and then run the following script:
+```
+bash fetch_real_training_data.sh
+```
+
+Also download the training images from respective dataset websites in data/real_training_images [COCO](https://cocodataset.org/#home) (2014 Train Images), [3DPW](https://virtualhumans.mpi-inf.mpg.de/3DPW/), [MPII](http://human-pose.mpi-inf.mpg.de/),  [MPI-INF-3DHP](https://vcai.mpi-inf.mpg.de/3dhp-dataset/), [H3.6M](http://vision.imar.ro/human3.6m/description.php). 
+After the download, you should have the following structure in your data folder.
+```  
+${data}  
+|-- real_training_images
+|   |-- 3DPW
+|   |   |-- imageFiles
+|   |-- coco
+|   |   |-- train2014
+|   |-- mpii
+|   |   |-- images
+|   |-- h36m
+|   |   |-- Images
+|   |   |   |-- S1 
+|   |   |   |-- S2 ..
+|   |-- mpi-inf-3dhp
+|   |   |-- S1
+|   |   |-- S2 ..
+```  
+Please note that if you don't want to follow the directory structure, you can also modify the path to the image folder in train/core/config.py
+
+### CLIFF
+With the following command you could train the CLIFF model with real images.
+
+```
+python train_smpl.py --cfg configs/orig_cliff.yaml
+
 ```

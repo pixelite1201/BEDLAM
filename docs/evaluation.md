@@ -38,6 +38,8 @@ ${data}
 |   |--AGORA
 |   |   |-- test
 ```  
+Please note that if you don't want to follow the directory structure, you can also modify the path to the image folder in train/core/config.py
+
 
 ### 3DPW/RICH/H3.6M evaluation
 The following command will reproduce results of BEDLAM-CLIFF model. You can provide path of different checkpoints with --ckpt flag to reproduce different results e.g. bedlam_cliff_3dpw_ft.ckpt, bedlam_hmr.ckpt, bedlam_hmr_3dpw_ft.ckpt.

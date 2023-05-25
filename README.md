@@ -33,11 +33,11 @@ pip install -r requirements.txt
 ### Prepare data
 If you need to run just the demo, please follow the following steps:
 
-Step 1. Register on [SMPL-X](https://smpl-x.is.tue.mpg.de/) website to download SMPL-X model.
+Step 1. Register on [SMPL-X](https://smpl-x.is.tue.mpg.de/) website.
 
-Step 2. Register on [MANO](https://mano.is.tue.mpg.de/) website to download MANO model.
+Step 2. Register on [MANO](https://mano.is.tue.mpg.de/) website.
 
-Step 3. Register on [BEDLAM](https://bedlam.is.tue.mpg.de/) website to download the utility files and the checkpoints.
+Step 3. Register on [BEDLAM](https://bedlam.is.tue.mpg.de/) website.
 
 Step 4. Run the following script to fetch demo data. The script will need the username and password created in above steps.
 ```

@@ -19,8 +19,6 @@ DOWNSAMPLE_MAT_SMPLX_PATH = 'data/utils/downsample_mat_smplx.pkl'
 DATASET_FOLDERS = {
     '3dpw-test-cam': 'data/test_images/3DPW',
     '3dpw-val-cam': 'data/test_images/3DPW',
-    '3dpw-train-smpl': 'data/test_images/3DPW',
-    '3dpw-train-smplx': 'data/test_images/3DPW',
     'rich': 'data/test_images/RICH',
     'h36m-p1': 'data/test_images/h36m/',
 
@@ -59,6 +57,13 @@ DATASET_FOLDERS = {
     'zoom-suburbd-hair': 'data/training_images/20221024_10_100_batch01handhair_zoom_suburb_d_30fps/png',
     'static-gym-hair': 'data/training_images/20221024_3-10_100_batch01handhair_static_highSchoolGym_30fps/png',
 
+    'coco': 'data/real_training_images/coco',
+    'mpii': 'data/real_training_images/mpii',
+    'h36m': 'data/real_training_images/h36m',
+    'mpi-inf-3dhp': 'data/real_training_images/mpi_inf_3dhp',
+    '3dpw-train-smpl': 'data/real_training_images/3DPW',
+    
+    '3dpw-train-smplx': 'data/real_training_images/3DPW',
 }
 
 DATASET_FILES = [
@@ -107,6 +112,11 @@ DATASET_FILES = [
         'static-gym-hair': 'data/training_labels/all_npz_12_training/20221024_3-10_100_batch01handhair_static_highSchoolGym_30fps.npz',
         'orbit-stadium-bmi': 'data/training_labels/all_npz_12_training/20221019_3-8_250_highbmihand_orbit_stadium_6fps.npz',
 
+        'coco': 'data/real_training_labels/coco.npz',
+        'mpii': 'data/real_training_labels//mpii.npz',
+        'h36m': 'data/real_training_labels//h36m_train.npz',
+        'mpi-inf-3dhp': 'data/real_training_labels//mpi_inf_3dhp_train.npz',
+        '3dpw-train-smpl': 'data/real_training_labels/3dpw_train.npz',
     }
 ]
 
