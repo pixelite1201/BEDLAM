@@ -3,7 +3,7 @@
 # BEDLAM: Bodies Exhibiting Detailed Lifelike Animated Motion 
 ## CVPR 2023
 
-## [Project Page](https://bedlam.is.tue.mpg.de) | [Paper](https://bedlam.is.tuebingen.mpg.de/media/upload/BEDLAM_CVPR2023.pdf) | Video (Coming soon)
+## [Project Page](https://bedlam.is.tue.mpg.de) | [Paper](https://bedlam.is.tuebingen.mpg.de/media/upload/BEDLAM_CVPR2023.pdf) | [Video](https://youtu.be/OBttHFwdtfI)
 
 </div>
 </div>
