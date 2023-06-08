@@ -55,6 +55,11 @@ bash fetch_demo_data.sh
 python demox.py --cfg configs/demo_bedlam_cliff_x.yaml --display
 ```
 
+## Dataset visualization
+Once you download BEDLAM dataset following the instructions in [training.md](docs/training.md), you can use the script to visualize the projection of 3D bodies on images
+```
+python visualize_ground_truth.py output_dir
+```
 
 ## Evaluation
 For instructions on how to run evaluation on different benchmarks please refer to [evaluation.md](docs/evaluation.md)
