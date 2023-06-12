@@ -101,3 +101,10 @@ With the following command you could train the CLIFF model with real images.
 python train_smpl.py --cfg configs/orig_cliff.yaml
 
 ```
+
+### Finetune with 3DPW
+If you want to finetune the model with 3DPW training data, you can run the following script.
+```
+python train_smpl.py --cfg configs/orig_cliff_3dpw_ft.yaml --resume --ckpt data/ckpt/cliff.ckpt 
+
+```
