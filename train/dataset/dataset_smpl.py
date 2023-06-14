@@ -38,8 +38,6 @@ class DatasetHMR(Dataset):
         else:
             self.betas = np.zeros((len(self.imgname), 10))
 
-        if 'pose_0yaw_inverseyz' in self.data:
-            self.pose = self.data['pose_0yaw_inverseyz'].astype(np.float)
         if 'pose_cam' in self.data:
             self.pose = self.data['pose_cam'].astype(np.float)
         elif 'pose' in self.data:

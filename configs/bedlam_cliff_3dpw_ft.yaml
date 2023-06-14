@@ -42,6 +42,6 @@ TRAINING:
   reduce_lr: true
 TRIAL:
   bedlam_bbox: true
-  criterion: l1
+  criterion: mse
   finetune_3dpw: true
 

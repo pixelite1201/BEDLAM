@@ -43,5 +43,5 @@ TRAINING:
 TRIAL:
   bedlam_bbox: true
   version: real
-  criterion: l1
+  criterion: mse
 
