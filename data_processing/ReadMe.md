@@ -23,7 +23,7 @@ Once the data is downloaded you can run the following script to generate the out
 python df_full_body.py --fps 6
 
 ```
-Note that you can either generate output in 6fps format where every 5th frame information is stored in the output or in 30fps format where every frame is stored. To get the identity of each subject, you can parse the `motion_info` field. 
+Note that you can either generate output in 6fps format where every 5th frame information is stored in the output or in 30fps format where every frame is stored. To get the identity of each subject, you can store the sub field.
 
 **Note that some of the images are rotated by 90 degree when generate by Unreal. All such images/scenes could be identified using `closeup` flag in bedlam_scene_names.csv. The processing code make sure that the ground truth is stored in correct format but this means that when loading the image, you need to rotate it by 90 degree so that the projection is correct.**
 
@@ -31,7 +31,7 @@ Note that you can either generate output in 6fps format where every 5th frame in
 ```
 imgname = Name of the images
 center = center of the subject
-scale= = scale of the subject
+scale = scale of the subject
 pose_cam = SMPL-X pose parameter of the subject in camera coordinates
 pose_world = SMPL-X pose parameter of the subject in world coordinates
 shape = 11 SMPL-X shape componenets
@@ -42,5 +42,6 @@ cam_int = camera intrinsic matrix
 cam_ext = camera extrinsic matrix
 gender = gender of the subject
 proj_verts = 2d vertices subsampled
-motion_info = identity info, action label
+motion_info = AMASS motion info, BABEL action label
+sub = identity
 ```
