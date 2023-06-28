@@ -68,6 +68,8 @@ For instructions on how to run evaluation on different benchmarks please refer t
 ## Training
 For instructions on how to run training please refer to [training.md](docs/training.md)
 
+## BEDLAM leaderboard
+If you want to upload your results to BEDLAM evaluation server, please follow the instructions [here](docs/leaderboard.md).
 
 <!-- ### CLIFF training -->
 # Citation
