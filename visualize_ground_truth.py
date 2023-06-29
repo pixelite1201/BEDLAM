@@ -13,7 +13,7 @@ SCENES = ['agora-bfh', 'agora-body', 'zoom-suburbd', 'closeup-suburba', 'closeup
         'orbit-archviz-objocc', 'pitchup-stadium', 'static-hdri-bmi', 'closeup-suburbb-bmi', 'closeup-suburbc-bmi', 'static-suburbd-bmi', 'zoom-gym-bmi',
         'pitchdown-stadium', 'static-office-hair', 'zoom-suburbd-hair', 'static-gym-hair', 'orbit-stadium-bmi']
 
-smplx_model_ = smplx.create(MODEL_FOLDER, model_type='smplx',
+smplx_model_male = smplx.create(MODEL_FOLDER, model_type='smplx',
                             gender='neutral',
                             ext='npz',
                             flat_hand_mean=True,
