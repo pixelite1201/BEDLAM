@@ -8,7 +8,7 @@ read -p "Password (BEDLAM):" password
 username=$(urle $username)
 password=$(urle $password)
 
-mkdir -p data/training_images
+mkdir -p data/
 wget --post-data "username=$username&password=$password" 'https://download.is.tue.mpg.de/download.php?domain=bedlam&resume=1&sfile=bedlam_images_train/20221010_3-10_500_batch01hand_zoom_suburb_d_6fps.tar' -O './data/training_images/20221010_3-10_500_batch01hand_zoom_suburb_d_6fps.tar' --no-check-certificate --continue
 wget --post-data "username=$username&password=$password" 'https://download.is.tue.mpg.de/download.php?domain=bedlam&resume=1&sfile=bedlam_images_train/20221010_3_1000_batch01hand_6fps.tar' -O './data/training_images/20221010_3_1000_batch01hand_6fps.tar' --no-check-certificate --continue
 wget --post-data "username=$username&password=$password" 'https://download.is.tue.mpg.de/download.php?domain=bedlam&resume=1&sfile=bedlam_images_train/20221011_1_250_batch01hand_closeup_suburb_a_6fps.tar' -O './data/training_images/20221011_1_250_batch01hand_closeup_suburb_a_6fps.tar' --no-check-certificate --continue
@@ -36,7 +36,6 @@ wget --post-data "username=$username&password=$password" 'https://download.is.tu
 wget --post-data "username=$username&password=$password" 'https://download.is.tue.mpg.de/download.php?domain=bedlam&resume=1&sfile=bedlam_images_train/20221024_10_100_batch01handhair_zoom_suburb_d_30fps.tar' -O './data/training_images/20221024_10_100_batch01handhair_zoom_suburb_d_30fps.tar' --no-check-certificate --continue
 wget --post-data "username=$username&password=$password" 'https://download.is.tue.mpg.de/download.php?domain=bedlam&resume=1&sfile=bedlam_images_train/20221024_3-10_100_batch01handhair_static_highSchoolGym_30fps.tar' -O './data/training_images/20221024_3-10_100_batch01handhair_static_highSchoolGym_30fps.tar' --no-check-certificate --continue
 wget --post-data "username=$username&password=$password" 'https://download.is.tue.mpg.de/download.php?domain=bedlam&resume=1&sfile=bedlam_images_train/agora_images.tar' -O './data/training_images/agora_images.tar' --no-check-certificate --continue
-wget --post-data "username=$username&password=$password" 'https://download.is.tue.mpg.de/download.php?domain=bedlam&resume=1&sfile=bedlam_images_train/20221019_3-8_250_highbmihand_orbit_stadium_6fps.tar' -O './data/training_images/20221019_3-8_250_highbmihand_orbit_stadium_6fps.tar' --no-check-certificate --continue
 
 
 mkdir -p data/training_labels

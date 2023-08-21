@@ -104,7 +104,6 @@ class DatasetHMR(Dataset):
     def rgb_processing(self, rgb_img_full, center, scale, img_res, kp2d=None):
 
         if self.is_train and self.options.ALB: 
-            rgb_img_full = cv2.cvtColor(rgb_img_full, cv2.COLOR_BGR2RGB)
             aug_comp = [A.Downscale(0.5, 0.9, interpolation=0, p=0.1),
                         A.ImageCompression(20, 100, p=0.1),
                         A.RandomRain(blur_value=4, p=0.1),

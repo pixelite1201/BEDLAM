@@ -73,7 +73,9 @@ DATASET_FILES = [
         'rich': 'data/eval_data_parsed/rich_test.npz',
         'h36m-p1': 'data/eval_data_parsed/h36m_valid_protocol1.npz',
         'orbit-stadium-bmi': 'data/training_labels/all_npz_12_training/20221019_3-8_250_highbmihand_orbit_stadium_6fps.npz',
-
+        'orbit-archviz-objocc': 'data/training_labels/all_npz_12_training/20221018_3_250_batch01hand_orbit_archVizUI3_time15_6fps.npz',
+        'zoom-suburbb-frameocc': 'data/training_labels/all_npz_12_training/20221018_1_250_batch01hand_zoom_suburb_b_6fps.npz',
+        'static-hdri-frameocc': 'data/training_labels/all_npz_12_training/20221018_3-8_250_batch01hand_6fps.npz',
     },
     {
         'agora-bfh': 'data/training_labels/all_npz_12_training/agora-bfh.npz',
@@ -97,9 +99,6 @@ DATASET_FILES = [
         'static-hdri': 'data/training_labels/all_npz_12_training/20221010_3_1000_batch01hand_6fps.npz',
         'static-hdri-zoomed': 'data/training_labels/all_npz_12_training/20221017_3_1000_batch01hand_6fps.npz',
         'staticzoomed-suburba-frameocc': 'data/training_labels/all_npz_12_training/20221017_1_250_batch01hand_closeup_suburb_a_6fps.npz',
-        'zoom-suburbb-frameocc': 'data/training_labels/all_npz_12_training/20221018_1_250_batch01hand_zoom_suburb_b_6fps.npz',
-        'static-hdri-frameocc': 'data/training_labels/all_npz_12_training/20221018_3-8_250_batch01hand_6fps.npz',
-        'orbit-archviz-objocc': 'data/training_labels/all_npz_12_training/20221018_3_250_batch01hand_orbit_archVizUI3_time15_6fps.npz',
         'pitchup-stadium': 'data/training_labels/all_npz_12_training/20221018_3-8_250_batch01hand_pitchUp52_stadium_6fps.npz',
         'static-hdri-bmi': 'data/training_labels/all_npz_12_training/20221019_3_250_highbmihand_6fps.npz',
         'closeup-suburbb-bmi': 'data/training_labels/all_npz_12_training/20221019_1_250_highbmihand_closeup_suburb_b_6fps.npz',
