@@ -8,14 +8,17 @@ Step 1. Register on [BEDLAM](https://bedlam.is.tue.mpg.de/) website.
 
 Step 2. Download BEDLAM 30fps images and ground truth camera in bedlam_data/images from Synthetic Image Data (30fps) section of [BEDLAM](https://bedlam.is.tue.mpg.de/download.php). Note that only image sequences and ground truth for sequences is needed i.e. -png, -gt
 
-Step 3. Register on [SMPL-X](https://smpl-x.is.tue.mpg.de/) website if not done already.
+Step 3. Register on [SMPL-X](https://smpl-x.is.tue.mpg.de/) website if not done already. If you want to get SMPL npz files, register on [SMPL](https://smpl.is.tue.mpg.de/)
 
-Step 4. Run following script to download SMPL-X model files and BEDLAM animation files in neutral format.
+Step 4. Run following script to download SMPL-X model files and BEDLAM animation files in neutral SMPL-X format. 
 
 ```
 bash download_utils.sh
 ```
-
+For SMPL, run following script instead:
+```
+bash download_utils_smpl.sh
+```
 ## Run 
 Once the data is downloaded you can run the following script to generate the output `*.npz` file for each scene. If you want to generate npz for particular scenee you can modify bedlam_scene_names.csv file.
 
@@ -23,9 +26,15 @@ Once the data is downloaded you can run the following script to generate the out
 python df_full_body.py --fps 6
 
 ```
+For SMPL, run following script:
+```
+python df_full_body_smpl.py --fps 6
+```
+
 Note that you can either generate output in 6fps format where every 5th frame information is stored in the output or in 30fps format where every frame is stored. To get the identity of each subject, you can store the sub field.
 
 **Note that some of the images are rotated by 90 degree when generate by Unreal. All such images/scenes could be identified using `closeup` flag in bedlam_scene_names.csv. The processing code make sure that the ground truth is stored in correct format but this means that when loading the image, you need to rotate it by 90 degree so that the projection is correct.**
+
 
 ## Details of generated .npz files
 ```
@@ -45,3 +54,4 @@ proj_verts = 2d vertices subsampled
 motion_info = AMASS motion info, BABEL action label
 sub = identity
 ```
+
