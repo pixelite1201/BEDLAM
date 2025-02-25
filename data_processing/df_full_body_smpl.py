@@ -350,11 +350,13 @@ def get_params(image_folder, fl, start_frame, gender_sub, smpl_param_orig, trans
             continue
 
         #visualize_crop(image_path, center, scale, torch.tensor(verts_cam2) , CAM_INT[0][0], smpl_model_male.faces)
-        if num_vis_joints < 12:
+        if num_vis_joints < 8:
             continue
-
-        verts_cam2 = vertices3d.detach().cpu().numpy() + cam_trans
-        visualize(image_path, torch.tensor(verts_cam2), CAM_INT[0][0], smpl_model_male.faces)
+        verts_cam = vertices3d.detach().cpu().numpy() + cam_trans
+        if (verts_cam[:,2]<0).any():
+            continue
+        # verts_cam2 = vertices3d.detach().cpu().numpy() + cam_trans
+        # visualize(image_path, torch.tensor(verts_cam2), CAM_INT[0][0], smpl_model_male.faces)
         # visualize_2d(image_path, joints2d)
         imgnames.append(os.path.join(image_path.split('/')[-2], image_path.split('/')[-1]))
         genders.append(gender_sub)
