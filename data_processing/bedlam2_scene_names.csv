@@ -1,0 +1,69 @@
+Folder name,Scene name
+20240425_1_171_citysample_dolly, city-dolly-moyo1
+20240416_1_171_yogastudio_orbit_timeofday, yoga-orbit-moyo
+20240423_1_171_yogastudio_staticloc_timeofday, yoga-static-moyo
+20240424_1_171_citysample_orbit, city-orbit-moyo1
+20240425_1_171_hdri, hdri-moyo
+20240426_5_100_citysample_orbit, city-orbit-moyo2
+20240429_1_171_stadium, stadium-moyo
+20240502_5_200_citysample_dolly, city-dolly-moyo2
+20240506_10_200_hdri, hdri-moyo2
+20240506_5_200_citysample_orbit, city-orbit-moyo3
+20240507_5_200_citysample_dollyz, city-dollyz-moyo
+20240514_1_1001_citysample_tracking, city-tracking-b2v01
+20240604_5_500_citysample_tracking, city-tracking-b2v02
+20240605_3_500_busstation_tracking, bus-tracking-b2v01
+20240606_4_250_busstation_orbit, bus-orbit-b2v01
+20240606_1_500_stadium_closeup, stadium-closeup-b2v01
+20240611_5_250_archmodelsvol8_dolly, archmodel-dolly-b2v01
+20240611_5_200_citysamplenight_dolly, citynight-dolly-b2v01
+20240613_1_200_hdri, hdri-b2v01
+20240614_5_200_citysamplenight_tracking, citynight-tracking-b2v01
+20240614_1_300_hdri, hdri-b2v02
+20240617_10_500_hdri, hdri-b2v03
+20240618_1_500_ai0805_orbit, ai0805-orbit-b2v01
+20240619_2_250_ai1004_orbit, ai1004-orbit-b2v01
+20240619_1_250_ai1004_tracking, ai1004-tracking-b2v01
+20240620_5_250_archmodelsvol8_dollyz, archmodel-dollyz-b2v01
+20240625_1_2337_hdri, hdri-b2v11
+20240628_1_250_ai1004_tracking, ai1004-tracking-b2v11
+20240628_4_250_busstation_orbit, bus-tracking-b2v11
+20240701_1_250_ai0901_lookat, ai0901-lookat-b2v11
+20240703_1_250_ai0901_orbit_portrait, ai0901-orbit-portrait-b2v11
+20240708_1_250_ai0901_static_portrait, ai0901-static-portrait-b2v11
+20240709_5_250_archmodelsvol8_zoom, archmodel-zoom-b2v11
+20240710_1_250_ai0805_orbit_portrait, ai0805-orbit-portrait-b2v11
+20240711_5-10_250_busstation_orbit_zoom, bus-orbit-zoom-b2v11
+20240725_1_250_ai0805_vcam, ai0805-vcam-b2v11
+20240726_1_250_ai0805_vcam, ai0805-vcam-b2v12
+20240729_1_250_ai1004_vcam, ai1004-vcam-portrait-b2v11
+20240730_1_250_ai1101_vcam, ai1101-vcam-portrait-b2v11
+20240731_1_1827_hdri, hdri-b2v21
+20240805_5-10_250_busstation_orbit_zoom, bus-orbit-zoom-b2v21
+20240806_1_250_ai1101_vcam, ai1101-vcam-portrait-b2v21
+20240808_1_250_ai1105_vcam, ai1105-vcam-b2v21
+20240809_1_250_ai1102_vcam, ai1102-vcam-portrait-b2v21
+20240813_1_250_ai1004_tracking, ai1004-tracking-b2v21
+20241001_5-10_250_busstation_orbit_zoom,bus-orbit-zoom-b2v22
+20241107_1_250_archmodelsvol8_tracking,archmodel-tracking-b2v02
+20241114_1_4619_hdri,hdri-b2v30
+20241204_1_2120_hdri,hdri-b2v40
+20241210_5-10_250_rome_dollyz_zoom,rome-dollyz-zoom-b2v40
+20241211_5-10_250_rome_orbit_zoom,rome-orbit-zoom-b2v40
+20241212_5-10_250_rome_dolly_zoom,rome-dolly-zoom-b2v40
+20241213_1_250_rome_tracking,rome-tracking-b2v40
+20241217_1_250_rome_vcam,rome-vcam-portrait-b2v40
+20241219_5_250_chemicalplant_dollyz_zoom,chemicalplant-dollyz-zoom-b2v30
+20250103_1_250_rome_vcam,rome-vcam-portrait-b2v30
+20250110_1_250_chemicalplant_vcam,chemicalplant-vcam-portrait-b2v30
+20250113_1_250_rome_vcam,rome-vcam-b2v31
+20250114_4-5_250_chemicalplant_dolly_zoom,chemicalplant-dolly-zoom-b2v30
+20250123_1_250_chemicalplant_vcamego,chemicalplant-vcamego-b2v30
+20250131_1_250_ai1102_vcamego,ai1102-vcamego-b2v30
+20250206_4-7_250_yakohama_vcamego_approach,yakohama-vcamego-b2v30
+20250211_1_250_ai1105_upperbody,ai1105-upperbody-b2v30
+20250212_1_250_yakohama_upperbody,yakohama-upperbody-b2v30
+20250214_1_250_chemicalplant_upperbody,chemicalplant-upperbody-b2v30
+20250218_2-3_250_middleeast_upperbody,middleeasy-upperbody-b2v30
+20250219_3-4_250_middleeast_vcam_approach,middleeast-vacam-b2v40
+20240621_1_250_archmodelsvol8_tracking,archmodel-tracking-b2v01
