@@ -83,7 +83,7 @@ This section covers the BEDLAM2 dataset, which includes enhanced annotations and
 This script processes the BEDLAM2 dataset, which is defined in `bedlam2_scene_names.csv`.
 
 ```bash
-python df_full_body_smplx_bedlam2.py --fps 6
+python df_full_body_smplx_bedlam2.py --fps 6 --output_folder name_of_output_folder
 ```
 
 ## 3. Key Differences and Notes

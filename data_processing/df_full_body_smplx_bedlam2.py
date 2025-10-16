@@ -307,7 +307,6 @@ def get_params(image_folder, fl, start_frame, gender_sub, smplx_param_orig, tran
             cam_ind = img_ind
 
         if smplx_param_ind >= smplx_param_orig['poses'].shape[0]:
-            break
         pose = smplx_param_orig['poses'][smplx_param_ind]
         transl = smplx_param_orig['trans'][smplx_param_ind]
         # Warn MOYO has 300 betas but we are using 16
@@ -506,7 +505,6 @@ def main():
                            cam_pitch_=cam_pitch_, cam_roll_=cam_roll_, cam_yaw_=cam_yaw_,
                            rotate_flag=rotate_flag, SENSOR_W=SENSOR_W, SENSOR_H=SENSOR_H, IMG_W=IMG_W, IMG_H=IMG_H,
                            smplx_models=smplx_models, downsample_mat=downsample_mat, visualize=args.visualize)
-                break
             else:
                 continue
 
