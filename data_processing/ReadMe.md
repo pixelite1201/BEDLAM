@@ -66,6 +66,20 @@ sub:          Identity of the subject
 
 ---
 
+# BEDLAM v1 Data Processing (BEDLAM2 Compatible)
+
+This script processes the original BEDLAM dataset but saves the output in the same format as BEDLAM2. It uses the ground truth motion files with a neutral head model and 16 shape parameters (betas), which can be downloaded from the [BEDLAM](https://bedlam.is.tue.mpg.de/) website (SMPL-X neutral locked head 16 betas ). Download and unzip in `bedlam_data/smplx_gt/lockedhead_16betas_motioninfo` 
+
+## 1. Run Processing
+
+```bash
+python df_full_body_bedlam1_compatible.py --fps 6
+```
+
+This will generate `.npz` files with the same structure as the BEDLAM2 data, including the enhanced annotations and 16 shape parameters. 
+
+---
+
 # BEDLAM v2 Data Processing
 
 This section covers the BEDLAM2 dataset, which includes enhanced annotations and uses an updated processing script.
