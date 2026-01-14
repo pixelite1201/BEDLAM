@@ -442,7 +442,28 @@ def get_h36m_joint_names():
         'rwrist',  # 16
     ]
 
-
+def get_h36m_skeleton():
+    return np.array(
+        [
+            [0, 1], 
+            [1, 2],
+            [2, 3], 
+            [0, 4],
+            [4, 5],
+            [5, 6], 
+            [0, 7], 
+            [7, 8], 
+            [8, 9], 
+            [8, 11], 
+            [8, 14], 
+            [9, 10], 
+            [11, 12],
+            [12, 13],
+            [14, 15],
+            [15, 16]
+        ]
+    )
+    
 def get_spin_skeleton():
     return np.array(
         [
