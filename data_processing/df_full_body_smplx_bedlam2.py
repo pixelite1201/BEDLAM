@@ -293,8 +293,6 @@ def get_params(image_folder, fl, start_frame, gender_sub, smplx_param_orig, tran
     all_images = sorted(glob(os.path.join(image_folder, '*' + IMG_FORMAT)))
     every_fifth = -4
     for img_ind, image_path in (enumerate(all_images)):
-        if img_ind>12:
-            break
         # Saving every 5th frame
         every_fifth += 4
         if fps == 6:
